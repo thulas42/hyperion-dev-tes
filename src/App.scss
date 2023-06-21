@@ -1,0 +1,160 @@
+@import './custom.scss';
+
+#main-panel {
+  font-family: 'Avenir', sans-serif !important;
+  
+  .nav-link {
+    color: #ee572a;
+    font-weight: bold;
+  }
+  
+  .btn {
+    border: 1px solid #ee572a !important;
+    font-weight: bold;
+    color: #ee572a;
+    
+    &-primary {
+      background: #fff !important;
+      
+      &:hover {
+        background: #ee572a !important;
+        border: 1px solid #ee572a !important;
+        color: #fff !important;
+      }
+    }
+    
+    &-block {
+      display: block !important;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .top {
+    display: flex !important;
+    align-items: center;
+    
+    .main-header {
+      font-weight: bolder;
+      margin: 0;
+    }
+    
+    img {
+      height: 70px;
+      width: auto;
+      margin-right: 20px;
+    }
+  }
+  
+  .sub-section {
+    display: flex !important;
+    
+    button {
+      width: 50%;
+      
+      &:nth-child(2) {
+        margin-right: 0 !important;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    * {
+      box-shadow: none !important;
+    }
+    
+    .sub-section {
+      display: block !important;
+      
+      button {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+    
+    .trial-section {
+      width: 100%;
+    }
+  }
+  
+  .trial-section {
+    display: flex;
+    
+    &-header {
+      font-weight: bolder !important;
+      font-size: larger;
+    }
+    
+    &-card {
+      border: none;
+      width: 50%;
+      margin: 5px;
+      
+      &-body {
+        height: 100%;
+      }
+      
+      .card-text {
+        font-weight: bolder;
+        font-size: inherit;
+      }
+    }
+  }
+}
+
+.right {
+  p {
+    color: #858585;
+  }
+  
+  .journey-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    &-item {
+      display: flex;
+      align-items: center;
+      font: 16px Avenir;
+      color: #858585;
+      
+      &:first-child {
+        &::before {
+          content: "1";
+          color: #ee572a;
+          font-size: 30px;
+          font-weight: 400;
+          margin-right: 10px;
+        }
+      }
+      
+      &:nth-child(2) {
+        &::before {
+          content: "2";
+          color: #ee572a;
+          font-size: 30px;
+          font-weight: 400;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  
+  .right-sub-header {
+    font-weight: bold;
+    
+    p {
+      font-weight: bolder;
+      color: #858585;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .box {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+  }
+}
